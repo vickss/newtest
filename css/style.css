@@ -14,6 +14,9 @@ body {
 body.rtl {
   font-family: Almarai, sans-serif;
 }
+.site-content {
+  padding-top: 78px;
+}
 .card-hover-shadow {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -395,10 +398,12 @@ ul.list {
 }
 
 .list li {
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
 }
-
+.list li::marker {
+  color: var(--bs-secondary);
+}
 .list ol {
   padding-left: 0.75rem;
 }
@@ -923,6 +928,7 @@ body.offcanvas-active {
 }
 .site-header.header-scroll {
   background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04);
 }
 .screen-darken {
   height: 100vh;
@@ -2006,6 +2012,9 @@ footer#colophon {
 }
 
 @media (min-width: 992px) {
+  .site-content {
+    padding-top: 110px;
+  }
   .full-col-1,
   .full-col-2 {
     max-width: 480px;
