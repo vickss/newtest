@@ -209,7 +209,10 @@ function reveal() {
     }
   }
 }
+
 window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal); // 👈 THIS FIXES IT
+
 /* Tabs */
 jQuery(document).ready(function () {
   // Active tab indicator

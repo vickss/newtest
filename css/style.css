@@ -788,7 +788,22 @@ body.offcanvas-active {
   padding: 0.25rem 2rem;
   font-size: 0.875rem;
 }
+::placeholder {
+  font-size: 0.875rem;
+  color: #775095 !important;
+  opacity: 1;
+}
 
+/* For older browsers */
+:-ms-input-placeholder {
+  font-size: 0.875rem;
+  color: #775095 !important;
+}
+
+::-ms-input-placeholder {
+  font-size: 0.875rem;
+  color: #775095 !important;
+}
 .form-control,
 .form-select {
   border-radius: 0.625rem;
