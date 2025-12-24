@@ -161,8 +161,8 @@ a:hover {
     box-shadow 0.3s;
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
+.btn:hover {
+  transform: translateY(-2px) !important;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 

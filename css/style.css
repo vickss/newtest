@@ -257,6 +257,13 @@ ul.list:last-child {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+#flavours,
+#fragrances {
+  scroll-margin-top: 3rem;
+}
+.w-12 {
+  width: 0.75rem;
+}
 .w-16 {
   width: 1rem;
 }
@@ -269,7 +276,9 @@ ul.list:last-child {
 .w-40 {
   width: 2.5rem;
 }
-
+.w-48 {
+  width: 3rem;
+}
 .w-51 {
   width: 3.188rem;
 }
@@ -291,6 +300,9 @@ ul.list:last-child {
 .w-146 {
   width: 9.125rem;
 }
+.h-12 {
+  height: 0.75rem;
+}
 .h-16 {
   height: 1rem;
 }
@@ -303,7 +315,9 @@ ul.list:last-child {
 .h-40 {
   height: 2.5rem;
 }
-
+.h-48 {
+  height: 3rem;
+}
 .h-51 {
   height: 3.188rem;
 }
@@ -520,7 +534,19 @@ body.offcanvas-active {
   background-repeat: no-repeat;
   animation: 1s infinite alternate l4;
 }
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  to {
+    transform: translateY(0);
+  }
 
+  50% {
+    transform: translateY(-20px);
+  }
+}
 @keyframes l4 {
   to {
     width: 1.563rem;
@@ -793,7 +819,19 @@ body.offcanvas-active {
   color: #775095 !important;
   opacity: 1;
 }
-
+.bg-center {
+  background-position: center;
+  background-size: cover;
+}
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+.card-hover-shadow:hover .transition-opacity {
+  opacity: 0.2;
+}
 /* For older browsers */
 :-ms-input-placeholder {
   font-size: 0.875rem;
